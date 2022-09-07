@@ -6,11 +6,11 @@ app = Flask(__name__)
 pmodel=pickle.load(open('model.pkl','rb'))
 # enc = pickle.load(open('encoder.pkl','rb'))
 @app.route('/')
-###A list input all input values 
+###A list input all input values
 #a variable predict containing predicted values of model.pred(intput)
 def hello():
     return render_template('index.html')
-    
+
 @app.route('/show/<int:score>')
 def show(score):
     return render_template('show.html',prediction=score)
@@ -27,12 +27,12 @@ def submit():
         lift=float(request.form['liname'])
         swimming_pool=float(request.form['sname'])
         parking=float(request.form['pname'])
-        property_size=float(request.form['poname'])
+        property_size=float(request.form['prname'])
         bathroom=float(request.form['bname'])
         facing=float(request.form['fname'])
         water_supply=float(request.form['wname'])
         balconies=float(request.form['baname'])
-        LIFT=float(request.form['lname'])
+        LIFT=float(request.form['liftname'])
         INTERNET=float(request.form['inname'])
         AC=float(request.form['acname'])
         INTERCOM=float(request.form['intername'])
