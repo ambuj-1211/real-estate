@@ -1,90 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Real Estate</title>
 </head>
+
 <body>
-  <form action="/submit" method='post'>
-
-    <label for="LOCALITY_LABLE">LOCALITY_LABLE</label><br>
-    <input type="number" id="lname" name="lname" value=""><br>
-
-    <label for="type">TYPE</label><br>
-    <input type="number" id="tname" name="tname" value=""><br>
-
-    <label for="latitude">LATITUDE</label><br>
-    <input type="number" id="laname" name="laname" value=""><br>
-
-    <label for="longitude">LONGITUDE</label><br>
-    <input type="number" id="loname" name="loname" value=""><br>
-
-    <label for="lease_type">LEASE_TYPE</label><br>
-    <input type="number" id="lename" name="lename" value=""><br>
-
-    <label for="gym">GYM</label><br>
-    <input type="number" id="gname" name="gname" value=""><br>
-
-    <label for="lift">LIFT</label><br>
-    <input type="number" id="liname" name="liname" value=""><br>
-
-    <label for="swimming_pool">SWIMMING_POOL</label><br>
-    <input type="number" id="sname" name="sname" value=""><br>
-
-    <label for="parking">PARKING<label><br>
-    <input type="number" id="pname" name="pname" value=""><br>
-
-    <label for="property_size">PROPERTY_SIZE</label><br>
-    <input type="number" id="poname" name="poname" value=""><br>
-
-    <label for="bathroom">BATHROOM</label><br>
-    <input type="number" id="bname" name="bname" value=""><br>
-
-    <label for="facing">FACING</label><br>
-    <input type="number" id="fname" name="fname" value=""><br>
-
-    <label for="fname">WATER_SUPPLY</label><br>
-    <input type="number" id="wname" name="wname" value=""><br>
-
-    <label for="balconies">BALCONIES</label><br>
-    <input type="number" id="baname" name="baname" value=""><br>
-
-    <label for="LIFT">LIFT</label><br>
-    <input type="number" id="lname" name="lname" value=""><br>
-
-    <label for="internet">INTERNET</label><br>
-    <input type="number" id="inname" name="inname" value=""><br>
-
-    <label for="ac">AC</label><br>
-    <input type="number" id="acname" name="acname" value=""><br>
-
-    <label for="intercom">INTERCOM</label><br>
-    <input type="number" id="intername" name="intername" value=""><br>
-
-    <label for="pool">POOL</label><br>
-    <input type="number" id="poname" name="poname" value=""><br>
-
-    <label for="fs">FS</label><br>
-    <input type="number" id="fsname" name="fsname" value=""><br>
-
-    <label for="security">SECURITY</label><br>
-    <input type="number" id="secname" name="secname" value=""><br>
-
-    <label for="sc">SC</label><br>
-    <input type="number" id="scname" name="scname" value=""><br>
-
-    <label for="park">PARK</label><br>
-    <input type="number" id="parkname" name="parkname" value=""><br>
-
-    <label for="hk">HK</label><br>
-    <input type="number" id="hkname" name="hkname" value=""><br>
-
-    <label for="pb">PB</label><br>
-    <input type="number" id="pbname" name="pbname" value=""><br>
-
-    <input type="submit" value="Submit">
-  </form>
+  <div class="container">
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-logo">
+          Real Estate
+        </div>
+        <div class="nav-btn">
+          Get Started
+        </div>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="info">
+        <div class="title-light">
+          Precise. Complete. Real.
+        </div>
+        <div class="title">
+          Get the best price for your property.
+        </div>
+        <div class="sub-title">
+          We got you covered!
+        </div>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="form">
+        <form action="/submit" method='post'>
+          <div class="form-field">
+            <label for="lname">Locality label</label>
+            <input type="number" id="lname" name="lname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="tname">Type of locality</label>
+            <input type="number" id="tname" name="tname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="laname">Latitude</label>
+            <input type="number" id="laname" name="laname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="loname">Longitude</label>
+            <input type="number" id="loname" name="loname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="lename">Type of Lease</label>
+            <input type="number" id="lename" name="lename" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="gname">Gym</label>
+            <input type="number" id="gname" name="gname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="liname">Lift</label>
+            <input type="number" id="liname" name="liname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="sname">Swimming pool</label>
+            <input type="number" id="sname" name="sname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="pname">Parking</label>
+            <input type="number" id="pname" name="pname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="prname">Property Size</label>
+            <input type="number" id="prname" name="prname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="bname">Bathroom</label>
+            <input type="number" id="bname" name="bname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="fname">Facing</label>
+            <input type="number" id="fname" name="fname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="wname">Water Supply</label>
+            <input type="number" id="wname" name="wname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="baname">Balconies</label>
+            <input type="number" id="baname" name="baname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="liftname">Lift</label>
+            <input type="number" id="liftname" name="liftname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="inname">Interner</label>
+            <input type="number" id="inname" name="inname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="acname">AC</label>
+            <input type="number" id="acname" name="acname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="intername">Intercom</label>
+            <input type="number" id="intername" name="intername" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="poname">Pool</label>
+            <input type="number" id="poname" name="poname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="fsname">FS</label>
+            <input type="number" id="fsname" name="fsname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="secname">Security</label>
+            <input type="number" id="secname" name="secname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="scname">SC</label>
+            <input type="number" id="scname" name="scname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="parkname">Park</label>
+            <input type="number" id="parkname" name="parkname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="hkname">HK</label>
+            <input type="number" id="hkname" name="hkname" value=""></input>
+          </div>
+          <div class="form-field">
+            <label for="pbname">PB</label>
+            <input type="number" id="pbname" name="pbname" value=""></input>
+          </div>
+          <div class="form-field-btn">
+            <input type="submit" value="Submit"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
